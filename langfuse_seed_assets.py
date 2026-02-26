@@ -120,7 +120,7 @@ class SeedRunner:
                 items[idx] = future.result()
 
         if any(item is None for item in items):
-            raise RuntimeError("Falha ao gerar todos os itens do seed.")
+            raise RuntimeError("Falha ao gerar todos os itens do seed")
 
         return [item for item in items if item is not None]
 
